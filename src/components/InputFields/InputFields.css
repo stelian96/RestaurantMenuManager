@@ -1,0 +1,36 @@
+.field-error,
+.input-field input.invalid,
+.input-field > label.field-error {
+  color: #ec5e26;
+  outline: none;
+}
+
+.input-field div.field-error{
+  font-size: 0.8rem;
+}
+
+.input-field label, .input-field .field-error {
+    position: absolute;
+    left: 50px;
+    margin-top: -20px;
+}
+
+.input-field .field-error {
+    margin: -20px 0px;
+}
+.input-field div {
+    margin-top: 0px !important;
+}
+.input-field input {
+    margin-top: 5px;
+    width: 90%;
+    height: 25px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding-left: 10px;
+    outline: none;
+}
+.input-field {
+    height: 72px;
+}
+

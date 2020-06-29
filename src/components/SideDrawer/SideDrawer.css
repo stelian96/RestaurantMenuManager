@@ -1,0 +1,46 @@
+.sideDrawer {
+  height: 100%;
+  background: rgb(255,192,142);
+  background: linear-gradient(180deg, rgba(255,192,142,1) 0%, rgba(255,255,255,0.9) 25%, rgba(255,255,255,0.9) 85%, rgba(255,192,142,0.9) 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  max-width: 400px;
+  z-index: 200;
+  transform: translateX(-100%);
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  
+}
+
+.sideDrawer.open {
+  transform: translateX(0);
+}
+
+.sideDrawer ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sideDrawer li {
+  margin: 0.5rem 0;
+}
+
+.sideDrawer a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+.sideDrawer a:hover,
+.sideDrawer.active {
+  color: #fa923f;
+}
+
+@media (min-width: 796px) {
+  .sideDrawer {
+    display:none;
+  }
+}
